@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gallery</title>
+  <title>Register</title>
   <link rel="stylesheet" href="../styles/header-navbar-footer.css">
   <link rel="stylesheet" href="../styles/register.css">
 </head>
@@ -12,94 +12,97 @@
   <header id="header"></header>
   <nav id="nav"></nav>
 
-  <div class="content">
-    <div class="title">
-      <h1>Register</h1>
-    </div>
-
-    <div class="gender-content">
-      <div class="content-title">
-        <label for="gender">GENDER</label>
+  <form onsubmit="event.preventDefault()">
+    <div class="content">
+      <div class="title">
+        <h1>Register</h1>
       </div>
-
-      <div class="gender-choose" id="gender">
-        <div class="male">
-          <input type="radio" id="male" name="gender" value="male">
-          <label for="male">Male</label><br>
+  
+      <div class="gender-content">
+        <div class="content-title">
+          <label for="gender">GENDER</label>
         </div>
-          
-        <div class="female">
-          <input type="radio" id="female" name="gender" value="female">
-          <label for="female">Female</label><br>
+  
+        <div class="gender-choose" id="gender">
+          <div class="male">
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+          </div>
+            
+          <div class="female">
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+          </div>
         </div>
       </div>
+  
+      <div class="name-content">
+        <div class="first-name">
+          <label for="first_name" class="content-title">FIRST NAME</label><br>
+          <input type="text" name="real_name" id="first_name" placeholder="Input First Name">
+        </div>
+  
+        <div class="last-name">
+          <label for="last_name" class="content-title">LAST NAME</label><br>
+          <input type="text" name="real_name" id="last_name" placeholder="Input Last Name">
+        </div>
+      </div>
+  
+      <div class="dob-content">
+        <div class="dob">
+          <label for="dob" class="content-title">DATE OF BIRTH</label><br>
+          <input type="date" name="date_of_birth" id="dob" placeholder="Input Date of Birth">
+        </div>
+      </div>
+  
+      <div class="username-content">
+        <div class="username">
+          <label for="username" class="content-title">USERNAME</label><br>
+          <input type="text" name="username" id="username" placeholder="Input Username">
+        </div>
+      </div>
+  
+      <div class="email-content">
+        <div class="email">
+          <label for="email" class="content-title">EMAIL</label><br>
+          <input type="text" name="email" id="email" placeholder="Input Email">
+        </div>
+  
+        <div class="confirm-email">
+          <label for="confirm_email" class="content-title">CONFIRM EMAIL</label><br>
+          <input type="text" name="confirm_email" id="confirm_email" placeholder="Confirm Your Email">
+        </div>
+      </div>
+  
+      <div class="password-content">
+        <div class="password">
+          <label for="password" class="content-title">PASSWORD</label><br>
+          <input type="password" name="password" id="password" placeholder="Input Password">
+        </div>
+  
+        <div class="confirm-password">
+          <label for="confirm_password" class="content-title">CONFIRM PASSWORD</label><br>
+          <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Your Password">
+        </div>
+      </div>
+  
+      <div class="terms-and-conditions-content">
+        <div class="terms-and-conditions">
+          <input type="checkbox" name="terms-and-conditions" id="terms_and_conditions" class="form-check-input">
+          <label for="term-and-conditions" class="form-check-label">I agree with all Terms and Conditions</label>
+        </div>
+      </div>
+  
+      <br>
+  
+      <div class="submit-button">
+        <input type="submit" onclick="registerHandler(event)">
+      </div>
     </div>
-
-    <div class="name-content">
-      <div class="first-name">
-        <label for="first_name" class="content-title">FIRST NAME</label><br>
-        <input type="text" name="real_name" id="first_name" placeholder="Input First Name">
-      </div>
-
-      <div class="last-name">
-        <label for="last_name" class="content-title">LAST NAME</label><br>
-        <input type="text" name="real_name" id="last_name" placeholder="Input Last Name">
-      </div>
-    </div>
-
-    <div class="dob-content">
-      <div class="dob">
-        <label for="dob" class="content-title">DATE OF BIRTH</label><br>
-        <input type="text" name="date_of_birth" id="dob" placeholder="Input Date of Birth">
-      </div>
-    </div>
-
-    <div class="username-content">
-      <div class="username">
-        <label for="username" class="content-title">USERNAME</label><br>
-        <input type="text" name="username" id="username" placeholder="Input Username">
-      </div>
-    </div>
-
-    <div class="email-content">
-      <div class="email">
-        <label for="email" class="content-title">EMAIL</label><br>
-        <input type="text" name="email" id="email" placeholder="Input Email">
-      </div>
-
-      <div class="confirm-email">
-        <label for="confirm_email" class="content-title">CONFIRM EMAIL</label><br>
-        <input type="text" name="confirm_email" id="confirm_email" placeholder="Confirm Your Email">
-      </div>
-    </div>
-
-    <div class="password-content">
-      <div class="password">
-        <label for="password" class="content-title">PASSWORD</label><br>
-        <input type="text" name="password" id="password" placeholder="Input Password">
-      </div>
-
-      <div class="confirm-password">
-        <label for="confirm_password" class="content-title">CONFIRM PASSWORD</label><br>
-        <input type="text" name="confirm_password" id="confirm_password" placeholder="Confirm Your Password">
-      </div>
-    </div>
-
-    <div class="terms-and-conditions-content">
-      <div class="terms-and-conditions">
-        <input type="checkbox" name="term-and-conditions" id="term-and-conditions" class="form-check-input">
-        <label for="term-and-conditions" class="form-check-label">I agree with all Terms and Conditions</label>
-      </div>
-    </div>
-
-    <br>
-
-    <div class="submit-button">
-      <input type="submit" value="Submit" id="submit">
-    </div>
-  </div>
+  </form>
 
   <footer id="footer"></footer>
 </body>
 <script type="text/javascript" src="../scripts/header-navbar-footer.js"></script>
+<script type="text/javascript" src="../scripts/register.js"></script>
 </html>
