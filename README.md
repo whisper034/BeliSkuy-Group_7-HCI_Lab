@@ -8,3 +8,5 @@ Anggota Group 7:
 Deadline: 14 Januari 2023
 
 Copyright Group 7. All Rights Reserved.
+
+Note: Apabila sudah diclone, tolong jangan dicommit dan dipush ke repo ini, terima kasih.
