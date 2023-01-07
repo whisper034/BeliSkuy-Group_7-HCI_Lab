@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'Calisto-MT';
+  src: url('../assets/fonts/Calisto_MT_Regular.ttf');
+}
+
+* {
+  font-family: 'Calisto-MT';
+  text-decoration: none;
+  margin: 0px;
+  color: black;
+}
+
+.content {
+  margin: 2rem 35rem;
+  padding: 0rem 5rem;
+}
+
+.title {
+  text-align: center;
+}
+
+.title h1 {
+  font-weight: bolder;
+}
+
+.content-title {
+  font-size: 14pt;
+}
+
+.gender-choose {
+  display: flex;
+}
+
+.male label, .female label, .terms-and-conditions label {
+  font-size: 13pt;
+}
+
+.name-content {
+  display: flex;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 1rem 1rem;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.submit-button {
+  text-align: center;
+}
+
+.submit-button input {
+  background-color: #f9cfa5;
+  padding: 1rem 4rem;
+  font-size: 14pt;
+  border-radius: 1rem;
+  border: none;
+}
+
+.submit-button input:hover {
+  background-color: #c69f79;
+}

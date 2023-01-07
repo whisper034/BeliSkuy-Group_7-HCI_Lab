@@ -29,35 +29,35 @@ footerTake.innerHTML =
           <h3>Pages</h3>
         </div>
 
-        <a href="../pages/gallery.html">
-          <div class="footer-text">
+        <div>
+          <a href="../pages/gallery.html">
             Gallery
-          </div>
-        </a>
+          </a>
+        </div>
 
-        <a href="../pages/register.html">
-          <div class="footer-text">
+        <div>
+          <a href="../pages/register.html">
             Register
-          </div>
-        </a>
+          </a>
+        </div>
 
-        <a href="../pages/cart.html">
-          <div class="footer-text">
+        <div>
+          <a href="../pages/cart.html">
             Cart
-          </div>
-        </a>
+          </a>
+        </div>
 
-        <a href="../pages/chat.html">
-          <div class="footer-text">
+        <div>
+          <a href="../pages/chat.html">
             Chat
-          </div>
-        </a>
+          </a>
+        </div>
 
-        <a href="../pages/profile.html">
-          <div class="footer-text">
+        <div>
+          <a href="../pages/profile.html">
             Profile
-          </div>
-        </a>
+          </a>
+        </div>
       </div>
 
       <div class="about-us">
@@ -65,23 +65,23 @@ footerTake.innerHTML =
           <h3>About Us</h3>
         </div>
 
-        <a href="">
-          <div class="footer-text">
+        <div>
+          <a href="">
             FAQ
-          </div>
-        </a>
+          </a>
+        </div>
 
-        <a href="">
-          <div class="footer-text">
+        <div>
+          <a href="">
             Return Policy
-          </div>
-        </a>
+          </a>
+        </div>
 
-        <a href="">
-          <div class="footer-text">
+        <div>
+          <a href="">
             Contact Us
-          </div>
-        </a>
+          </a>
+        </div>
       </div>
 
       <div class="social-media">
