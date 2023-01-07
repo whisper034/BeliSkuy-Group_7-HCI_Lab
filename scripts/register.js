@@ -1,5 +1,5 @@
 const registerHandler = () => {
-  // langsung didefine aja semua value yang ada
+  // define all values first
   const getSelectedGenderValue = document.querySelector("input[name='gender']:checked") == null ? null : document.querySelector("input[name='gender']:checked").value;
   const getFirstNameValue = document.getElementById("first_name").value;
   
@@ -19,9 +19,10 @@ const registerHandler = () => {
   const getConfirmPasswordValue = document.getElementById("confirm_password").value;
   const getCheckedTermsAndConditionsValue = document.querySelector("#terms_and_conditions");
   
-
+  // use if else so the page will not have many alerts going on, i'm tired of clicking
+  // set canBeSubmitted to true first, and if it goes in with the alerts, set it to false
   let canBeSubmitted = true;
-  // pake if dan else if secara berurut biar alertnya gk banyak
+  
   if (!getSelectedGenderValue) {
     canBeSubmitted = false;
     alert("Please select your gender.");
@@ -71,6 +72,7 @@ const registerHandler = () => {
     alert("You have to agree with all of our terms and conditions first.");
   }
 
+  // this means that the form has passed all validations
   if (canBeSubmitted) {
     location.replace("../pages/thank-you.html");
   }
