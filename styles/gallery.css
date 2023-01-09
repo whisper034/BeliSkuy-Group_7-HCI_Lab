@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'Calisto-MT';
+  src: url('../assets/fonts/Calisto_MT_Regular.ttf');
+}
+
+* {
+  font-family: 'Calisto-MT';
+  text-decoration: none;
+  margin: 0px;
+  color: black;
+}
+
+.content {
+  margin: 3rem;
+}
+
+#banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-image-pointer {
+  height: 100px;
+}
+
+.banner-image {
+  height: 350px;
+}
+
+#left:hover, #right:hover {
+  opacity: 0.5;
+}
+
+p {
+  text-align: center;
+  font-size: 40pt;
+}
+
+.category-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-top, .category-bottom {
+  display: flex;
+  align-items: center;
+}
+
+.image-container {
+  position: relative;
+  text-align: center;
+}
+
+.category-image {
+  height: 200px;
+  opacity: 0.9;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 26pt;
+}
+
+.mr-image-1, .mr-image-2 {
+  margin-right: 6rem;
+}
+
+@media(max-width: 1000px) {
+  .banner-image {
+    height: 18rem;
+  }
+
+  .category-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .category-top, .category-bottom {
+    display: flex;
+    align-items: center;
+  }
+
+  .mr-image-1 {
+    margin-right: 2rem;
+  }
+
+  .mr-image-2 {
+    margin-right: 0;
+  }
+}
+
+@media(max-width: 500px) {
+  .content {
+    margin: 1rem;
+  }
+
+  .banner-image-pointer {
+    height: 50px;
+  }
+
+  .banner-image {
+    height: 8rem;
+  }
+
+  .category-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  p {
+    text-align: center;
+    font-size: 30pt;
+  }
+
+  .category-top, .category-bottom {
+    display: flex;
+    align-items: center;
+  }
+
+  .category-image {
+    height: 120px;
+  }
+
+  .mr-image-1 {
+    margin-right: 2rem;
+  }
+
+  .mr-image-2 {
+    margin-right: 0;
+  }
+
+  .centered {
+    color: white;
+    font-size: 16pt;
+  }
+}
