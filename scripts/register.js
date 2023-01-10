@@ -47,6 +47,10 @@ const registerHandler = () => {
     canBeSubmitted = false;
     alert("Please input your email.");
   }
+  else if (!validateEmail(getEmailValue)) {
+    canBeSubmitted = false;
+    alert("Please input a valid email!");
+  }
   else if (!getConfirmEmailValue) {
     canBeSubmitted = false;
     alert("Please confirm your email.");
@@ -75,5 +79,15 @@ const registerHandler = () => {
   // this means that the form has passed all validations
   if (canBeSubmitted) {
     location.replace("../pages/thank-you.html");
+  }
+}
+
+function validateEmail(inputText) {
+  var mailformat = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/;
+  if(inputText.match(mailformat)) {
+    return true;
+  }
+  else {
+    return false;
   }
 }
