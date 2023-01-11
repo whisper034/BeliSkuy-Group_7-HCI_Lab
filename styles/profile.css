@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'Calisto-MT';
+  src: url('../assets/fonts/Calisto_MT_Regular.ttf');
+}
+
+* {
+  font-family: 'Calisto-MT';
+  text-decoration: none;
+  margin: 0px;
+  color: black;
+}
+
+.content {
+  margin: 2rem 28rem;
+  padding: 0rem 5rem;
+}
+
+.profile-picture {
+  text-align: center;
+}
+
+.profile-picture img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-picture p {
+  font-size: 16pt;
+}
+
+.identity {
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.markdown {
+  width: 40%;
+}
+
+.value {
+  width: 55%;
+}
+
+.double-dots {
+  width: 5%;
+}
+
+.markdown p, .double-dots p, .value p {
+  font-size: 14pt;
+  margin-bottom: 10px;
+}
+
+@media(max-width: 1000px) {
+  .content {
+    margin: 2rem;
+    padding: 0rem 5rem;
+  }
+
+  .markdown {
+    width: 30%;
+  }
+}
+
+@media(max-width: 500px) {
+  .content {
+    margin: 1rem;
+    padding: 0rem 1rem;
+  }
+
+  .profile-picture p {
+    font-size: 14pt;
+  }
+
+  .markdown {
+    width: 37%;
+  }
+  
+  .value {
+    width: 55%;
+  }
+  
+  .double-dots {
+    width: 5%;
+  }
+  
+  
+  .markdown p, .double-dots p, .value p {
+    font-size: 10pt;
+    margin-bottom: 10px;
+  }
+}
