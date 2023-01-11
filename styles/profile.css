@@ -53,3 +53,43 @@
   font-size: 14pt;
   margin-bottom: 10px;
 }
+
+@media(max-width: 1000px) {
+  .content {
+    margin: 2rem;
+    padding: 0rem 5rem;
+  }
+
+  .markdown {
+    width: 30%;
+  }
+}
+
+@media(max-width: 500px) {
+  .content {
+    margin: 1rem;
+    padding: 0rem 1rem;
+  }
+
+  .profile-picture p {
+    font-size: 14pt;
+  }
+
+  .markdown {
+    width: 37%;
+  }
+  
+  .value {
+    width: 55%;
+  }
+  
+  .double-dots {
+    width: 5%;
+  }
+  
+  
+  .markdown p, .double-dots p, .value p {
+    font-size: 10pt;
+    margin-bottom: 10px;
+  }
+}
