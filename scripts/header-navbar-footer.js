@@ -70,7 +70,7 @@ footerTake.innerHTML =
     </div>
 
     <div>
-      <a href="">
+      <a href="../pages/faq.html">
         FAQ
       </a>
     </div>
