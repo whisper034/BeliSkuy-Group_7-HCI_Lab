@@ -12,9 +12,91 @@
   <header id="header"></header>
   <nav id="nav"></nav>
 
-  cart content here
+  <div class="content">
+    <div class="shopping-cart">
+      <div class="title">
+        <p>SHOPPING CART</p>
+      </div>
+
+      <br>
+
+      <div class="items">
+        <img src="../assets/images/category/1.png" alt="item-1">
+        <div class="description">
+          <p>Item 1</p>
+          <p>Rp100.000</p>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="items">
+        <img src="../assets/images/category/2.png" alt="item-2">
+        <div class="description">
+          <p>Item 2</p>
+          <p>Rp150.000</p>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="items">
+        <img src="../assets/images/category/3.png" alt="item-3">
+        <div class="description">
+          <p>Item 3</p>
+          <p>Rp50.000</p>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="items">
+        <img src="../assets/images/category/4.png" alt="item-4">
+        <div class="description">
+          <p>Item 4</p>
+          <p>Rp30.000</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="order-summary">
+      <div class="border">
+        <div class="title">
+          <p>ORDER SUMMARY</p>
+        </div>
+
+        <br>
+
+        <div class="items">
+          <p class="item-desc">4 Items</p>
+        </div>
+
+        <div class="price-subtotal">
+          <p>Items Subtotal:</p>
+          <p>Rp330.000</p>
+        </div>
+
+        <div class="price-tax">
+          <p>Tax:</p>
+          <p>Rp8.000</p>
+        </div>
+
+        <br>
+
+        <div class="price-total">
+          <p>Total:</p>
+          <p>Rp338.000</p>
+        </div>
+      </div>
+
+      <div class="checkout-button">
+        <button type="submit" onclick="cartHandler(event)">CHECKOUT</button>
+      </div>
+    </div>
+  </div>
 
   <footer id="footer"></footer>
 </body>
 <script type="text/javascript" src="../scripts/header-navbar-footer.js"></script>
+<script type="text/javascript" src="../scripts/cart.js"></script>
 </html>
