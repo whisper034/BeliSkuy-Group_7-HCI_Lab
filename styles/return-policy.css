@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'Calisto-MT';
+  src: url('../assets/fonts/Calisto_MT_Regular.ttf');
+}
+
+* {
+  font-family: 'Calisto-MT';
+  text-decoration: none;
+  margin: 0px;
+  color: black;
+}
+
+.content {
+  margin: 2rem 20rem;
+  padding: 0rem 5rem;
+}
+
+.title {
+  font-size: 20pt;
+  font-weight: bold;
+  text-align: center;
+}
+
+.items {
+  display: flex;
+  font-size: 14pt;
+  text-align: justify;
+}
+
+@media(max-width: 1000px) {
+  .content {
+    margin: 2rem 2rem;
+  padding: 0rem 5rem;
+  }
+}
+
+@media(max-width: 500px) {
+  .content {
+    margin: 1rem 1rem;
+    padding: 0rem 1rem;
+  }
+
+  .title {
+    font-size: 16pt;
+  }
+  
+  .items {
+    font-size: 12pt;
+  }
+}
