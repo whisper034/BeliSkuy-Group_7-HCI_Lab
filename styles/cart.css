@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'Calisto-MT';
+  src: url('../assets/fonts/Calisto_MT_Regular.ttf');
+}
+
+* {
+  font-family: 'Calisto-MT';
+  text-decoration: none;
+  margin: 0px;
+  color: black;
+}
+
+.content {
+  margin: 2rem 5rem;
+  padding: 0rem 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.shopping-cart .title p {
+  font-size: 18pt;
+  font-weight: bold;
+}
+
+.shopping-cart .items {
+  display: flex;
+}
+
+.shopping-cart .items img {
+  height: 100px;
+  margin-right: 1rem;
+}
+
+.order-summary .border {
+  border: solid black 5px;
+  padding: 1rem 0.5rem;
+}
+
+.order-summary .title p {
+  font-size: 16pt;
+  font-weight: bold;
+}
+
+.order-summary .items .item-desc {
+  font-size: 14pt;
+  margin-bottom: 0.5rem;
+}
+
+.order-summary .price-subtotal {
+  margin-bottom: 0.3rem;
+}
+
+.checkout-button {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.checkout-button button {
+  background-color: #ff1616;
+  padding: 1rem 3rem;
+  font-size: 14pt;
+  border-radius: 0.3rem;
+  border: none;
+}
+
+.checkout-button button:hover {
+  background-color: #a70e0e;
+  color: white;
+  cursor: pointer;
+}
+
+@media(max-width: 1000px) {
+  .content {
+    margin: 1rem;
+    padding: 0rem 2rem;
+  }
+}
+
+@media(max-width: 500px) {
+  .content {
+    margin: 1rem;
+    padding: 0rem 0rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .shopping-cart .title p {
+    font-size: 16pt;
+  }
+
+  .order-summary {
+    margin-top: 2rem;
+  }
+
+  .order-summary .title p {
+    font-size: 14pt;
+  }
+
+  .order-summary .items .item-desc {
+    font-size: 12pt;
+  }
+
+  .checkout-button button {
+    background-color: #ff1616;
+    padding: 1rem 3rem;
+    font-size: 12pt;
+    border-radius: 0.3rem;
+    border: none;
+  }
+}

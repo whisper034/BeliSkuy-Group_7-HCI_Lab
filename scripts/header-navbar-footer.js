@@ -70,19 +70,19 @@ footerTake.innerHTML =
     </div>
 
     <div>
-      <a href="">
+      <a href="../pages/faq.html">
         FAQ
       </a>
     </div>
 
     <div>
-      <a href="">
+      <a href="../pages/return-policy.html">
         Return Policy
       </a>
     </div>
 
     <div>
-      <a href="">
+      <a href="../pages/contact-us.html">
         Contact Us
       </a>
     </div>
