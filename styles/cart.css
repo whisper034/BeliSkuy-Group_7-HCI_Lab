@@ -27,8 +27,12 @@
 }
 
 .shopping-cart .items img {
-  height: 100px;
+  height: 200px;
   margin-right: 1rem;
+}
+
+.shopping-cart .items p {
+  font-size: 16pt;
 }
 
 .order-summary .border {
@@ -86,6 +90,15 @@
 
   .shopping-cart .title p {
     font-size: 16pt;
+  }
+
+  .shopping-cart .items img {
+    height: 130px;
+    margin-right: 1rem;
+  }
+  
+  .shopping-cart .items p {
+    font-size: 14pt;
   }
 
   .order-summary {
