@@ -1,0 +1,154 @@
+@font-face {
+  font-family: 'Calisto-MT';
+  src: url('../assets/fonts/Calisto_MT_Regular.ttf');
+}
+
+* {
+  font-family: 'Calisto-MT';
+  text-decoration: none;
+  margin: 0px;
+  color: black;
+}
+
+.content {
+  margin: 2rem 20rem;
+  padding: 0rem 5rem;
+}
+
+.border {
+  border: solid black 4px;
+  border-radius: 30px;
+}
+
+.inner-border {
+  border-bottom: solid black 4px;
+  padding: 0.5rem 0rem;
+}
+
+.inner-border p {
+  font-size: 18pt;
+  text-align: center;
+  font-weight: bold;
+}
+
+.chat-content {
+  margin: 0.5rem 0rem;
+}
+
+.chat-content .chat-1 {
+  background-color: #c69f79;
+  border-radius: 30px;
+  margin-left: 1rem;
+  margin-right: 20rem;
+  padding: 1rem 1rem;
+}
+
+.chat-content .chat-1 p {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 16pt;
+  text-align: left;
+}
+
+.chat-content .chat-2 {
+  background-color: #f9cfa5;
+  border-radius: 30px;
+  margin-left: 20rem;
+  margin-right: 1rem;
+  padding: 1rem 1rem;
+}
+
+.chat-content .chat-2 p {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 16pt;
+  text-align: right;
+}
+
+.input-chat {
+  display: flex;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.input-chat input[type="text"] {
+  width: 100%;
+  padding: 0.5rem 0.5rem;
+  margin-right: 20px;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 30px;
+  box-sizing: border-box;
+  font-size: 13pt;
+}
+
+.input-chat button {
+  background-color: #844836;
+  padding: 0.5rem 1rem;
+  font-size: 13pt;
+  border-radius: 1rem;
+  border: none;
+  color: white;
+}
+
+.input-chat button:hover {
+  background-color: #c46b50;
+  color: black;
+  cursor: pointer;
+}
+
+@media(max-width: 1000px) {
+  .content {
+    margin: 2rem 2rem;
+    padding: 0rem 5rem;
+  }
+
+  .chat-content .chat-1 {
+    margin-right: 19rem;
+  }
+  
+  .chat-content .chat-2 {
+    margin-left: 19rem;
+  }
+}
+
+@media(max-width: 500px) {
+  .content {
+    margin: 1rem 1rem;
+    padding: 0rem 0rem;
+  }
+
+  .inner-border p {
+    font-size: 14pt;
+  }
+
+  .chat-content .chat-1 {
+    margin-right: 6rem;
+  }
+  
+  .chat-content .chat-1 p {
+    font-size: 12pt;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .chat-content .chat-2 {
+    margin-left: 6rem;
+  }
+  
+  .chat-content .chat-2 p {
+    font-size: 12pt;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .input-chat input[type="text"] {
+    font-size: 12pt;
+  }
+  
+  .input-chat button {
+    font-size: 12pt;
+  }
+}
