@@ -82,7 +82,7 @@ footerTake.innerHTML =
     </div>
 
     <div>
-      <a href="">
+      <a href="../pages/contact-us.html">
         Contact Us
       </a>
     </div>
