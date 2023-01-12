@@ -76,7 +76,7 @@ footerTake.innerHTML =
     </div>
 
     <div>
-      <a href="">
+      <a href="../pages/return-policy.html">
         Return Policy
       </a>
     </div>
